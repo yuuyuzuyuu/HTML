@@ -6,7 +6,7 @@
     <!-- contentの中身＝検索エンジンが利用することもあるので、丁寧に書く。 -->
     <meta name="description" content="私のサイトです。">
     <!-- ファビコンの設定 -->
-    <link rel="icon" href="favicon.ico"
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <!-- altは、画像が何らかの理由で表示できなかった場合に表示されるテキスト。 -->
@@ -18,11 +18,11 @@
 
     <!-- 引用したもの -->
     <blockquote cite="https://www.google.co.jp/">
-      <p>googleは、とても便利です！</p>
+      <p><a href="https://www.google.co.jp/" target="_blank">google</a>は、とても便利です！</p>
     </blockquote>
 
     <ol>
-      <li>a</li>
+      <li><a href="#a">a</a></li>
       <li>b</li>
       <li>c</li>
     </ol>
@@ -35,6 +35,47 @@
       <dt>c</dt>
       <dd>C</dd>
     </dl>
+
+    <h2 id="a">区切り</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>名称</th>
+          <th>説明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>header</td>
+          <td>導入的なコンテンツ</td>
+        </tr>
+        <tr>
+          <td>footer</td>
+          <td>締めくくりのコンテンツ</td>
+        </tr>
+        <td>nav</td>
+        <td>ナビゲーション（メニューのリンクなど）</td>
+        <tr>
+          <td>aside</td>
+          <td>関連性が薄いコンテンツ（サイドバーなどの広告など）</td>
+        </tr>
+        <tr>
+          <td>article</td>
+          <td>記事・独立したコンテンツ</td>
+        </tr>
+        <tr>
+          <td>main</td>
+          <td>主要なコンテンツ（ページ内で１つしか使えない）</td>
+        </tr>
+        <tr>
+          <td>section</td>
+          <td>汎用的に使える区切り</td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+      <p><a href="#top">先頭に戻る</a></p>
+    </footer>
   
   </body>
 </html>
